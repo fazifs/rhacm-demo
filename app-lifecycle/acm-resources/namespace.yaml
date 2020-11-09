@@ -3,3 +3,13 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: etherpad
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: acm-app-secret
+  namespace: etherpad
+data:
+  token: OTJlMTdlZDRiYTdiNmY5NTk4NTYwZDAzODRjNmY0OWY4YTllNGQ4Nw==
+  user: YXZhbGVyb3I=
+#type: Opaque
