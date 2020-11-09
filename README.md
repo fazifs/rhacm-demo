@@ -1,2 +1,2 @@
-# rhacm-demo
-Repo to deliver RHACM demos
+# RHACM-demo
+Repo to deliver RH ACM product demos
