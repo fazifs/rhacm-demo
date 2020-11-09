@@ -6,8 +6,6 @@
   collections:
     - community.general
   tasks:
-  - import_role: 
-      name: community.general.slack
   - name: Send notification message via Slack
     community.general.slack:
       token: "{{slack_token}}"
