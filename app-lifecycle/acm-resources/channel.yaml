@@ -7,3 +7,5 @@ metadata:
 spec:
   type: GitHub
   pathname: https://github.com/avaleror/rhacm-demo.git
+  secretRef:
+    name: acm-app-secret
