@@ -10,6 +10,8 @@ metadata:
     apps.open-cluster-management.io/git-branch: master
 spec:
   channel: etherpad/etherpad-app-latest
+  hooksecretref:
+    name: toweraccess
   placement:
     placementRef:
       kind: PlacementRule
