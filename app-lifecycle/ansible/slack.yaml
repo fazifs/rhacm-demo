@@ -7,7 +7,8 @@
     - community.general
   tasks:
   - name: Send notification message via Slack
-    community.general.slack:
+    #community.general.slack:
+    slack:
       token: "{{slack_token}}"
       msg: 'This is a message generatd with Ansible!!'
     delegate_to: localhost
