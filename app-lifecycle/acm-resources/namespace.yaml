@@ -19,8 +19,8 @@ kind: Secret
 metadata:
   name: toweraccess
   namespace: etherpad
-data:
-  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hY21odWIuZDVmMy5zYW5kYm94ODQwLm9wZW50bGMuY29t
-  token: aXVqYnNmTjd6c3VlQzcwRzF1NGQ4YWpSZVRLRDdj
+stringData:
+  host: https://ansible-tower-web-svc-tower.apps.acmhub.d5f3.sandbox840.opentlc.com
+  token: iujbsfN7zsueC70G1u4d8ajReTKD7c
 type: Opaque
 
