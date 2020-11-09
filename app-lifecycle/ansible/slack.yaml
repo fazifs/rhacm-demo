@@ -3,6 +3,7 @@
   hosts: localhost
   vars:
     - slack_token: T01DXJFQCJJ/B01E19UC85T/v7d9Vb7ybV1lkZG97LsOomPC
+    - app: Etherpad
   collections:
     - community.general
   tasks:
@@ -10,5 +11,5 @@
     #community.general.slack:
     slack:
       token: "{{slack_token}}"
-      msg: 'This is a message generatd with Ansible!!'
+      msg: 'The app "{{app}}" has been deployed successfully'
     delegate_to: localhost
