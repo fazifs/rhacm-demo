@@ -12,4 +12,15 @@ metadata:
 data:
   token: OTJlMTdlZDRiYTdiNmY5NTk4NTYwZDAzODRjNmY0OWY4YTllNGQ4Nw==
   user: YXZhbGVyb3I=
-#type: Opaque
+type: Opaque
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: toweraccess
+  namespace: etherpad
+data:
+  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hY21odWIuZDVmMy5zYW5kYm94ODQwLm9wZW50bGMuY29t
+  token: aXVqYnNmTjd6c3VlQzcwRzF1NGQ4YWpSZVRLRDdj
+type: Opaque
+
