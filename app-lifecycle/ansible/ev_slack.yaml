@@ -11,5 +11,5 @@
     #community.general.slack:
     slack:
       token: "{{slack_token}}"
-      msg: 'The app "{{app}}" has been deployed successfully'
+      msg: 'The app "{{APPLICATION}}" is deployed in the cluster "{{CLUSTER}}"'
     delegate_to: localhost

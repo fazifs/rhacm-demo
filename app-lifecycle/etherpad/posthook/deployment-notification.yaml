@@ -10,5 +10,5 @@ spec:
   tower_auth_secret: toweraccess
   job_template_name: Slack
   extra_vars:
-    CLUSTER: baremetal-uk
+    #CLUSTER: baremetal-uk
     APPLICATION: Etherpad
