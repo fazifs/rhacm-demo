@@ -5,14 +5,10 @@ metadata:
   name: slack-notification
   namespace: etherpad
   labels:
-    app.kubernetes.io/name: pacman
+    app.kubernetes.io/name: etherpad
 spec:
   tower_auth_secret: toweraccess
   job_template_name: Slack
-#  extra_vars:
-#    API_DOMAIN: demo.red-chesterfield.com
-#    # The AWS Route53 NS Record must exist with NameServers:
-#    # ns1.f5cloudservices.com
-#    # ns2.f5cloudservices.com
-#    GSLB_ZONE: www-apps
-#    BASE_DOMAIN: quebec.demo.red-chesterfield.com
+  extra_vars:
+    CLUSTER: baremetal-uk
+    APPLICATION: Etherpad
