@@ -2,7 +2,7 @@
 - name: Test Slack Integration Module
   hosts: localhost
   vars:
-    - slack_token: T01DXJFQCJJ/B01E19UC85T/v7d9Vb7ybV1lkZG97LsOomPC
+    - slack_token: T01DXJFQCJJ/B01EU1RS0JD/KRHbXridaKyyNdp45l7NLIuJ
     - app: Etherpad
   collections:
     - community.general
