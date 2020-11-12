@@ -1,5 +1,4 @@
 resources:
-- acm-app-secret.yaml
 - etherpad_configmap.yaml
 - etherpad_deployment.yaml
 - etherpad_route.yaml
