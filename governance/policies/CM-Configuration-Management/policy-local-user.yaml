@@ -26,12 +26,12 @@ spec:
               objectDefinition:
                 apiVersion: v1
                 kind: Secret
-                  metadata:
-                    name: htpass-secret
-                    namespace: openshift-config
-                  data:
-                    htpasswd: Y2x1c3RlcmFkbWluOiRhcHIxJEhlckd0cEhMJEdORDB5RTNJVHM0am9CMTJGRlIzRi4Kb2JzZXJ2ZXI6JGFwcjEkZXR2OXlZRWskakdLRTZMa0xCZDhrZHJMaFlnZkJpLwphZG1pbjokYXByMSRYREwwZGJXUSRrRGlxWnR2eU1FdXB1ZHFzS1BjSXMxCmVkaXRvcjokYXByMSQ0dWhHZXFqVCRJMUlmd21qQXh5RU84MUtrQm9GNUYuCmRldmVsb3BlcjokYXByMSRSYmpPbUtXQiQ4M0t3VFlFNENSR3lVNmoueUNtOHEuCg==
-                  type: Opaque
+                metadata:
+                  name: htpass-secret
+                  namespace: openshift-config
+                data:
+                  htpasswd: Y2x1c3RlcmFkbWluOiRhcHIxJEhlckd0cEhMJEdORDB5RTNJVHM0am9CMTJGRlIzRi4Kb2JzZXJ2ZXI6JGFwcjEkZXR2OXlZRWskakdLRTZMa0xCZDhrZHJMaFlnZkJpLwphZG1pbjokYXByMSRYREwwZGJXUSRrRGlxWnR2eU1FdXB1ZHFzS1BjSXMxCmVkaXRvcjokYXByMSQ0dWhHZXFqVCRJMUlmd21qQXh5RU84MUtrQm9GNUYuCmRldmVsb3BlcjokYXByMSRSYmpPbUtXQiQ4M0t3VFlFNENSR3lVNmoueUNtOHEuCg==
+                type: Opaque
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
