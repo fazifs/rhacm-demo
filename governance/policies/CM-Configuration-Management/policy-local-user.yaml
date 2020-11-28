@@ -30,7 +30,7 @@ spec:
                   name: htpass-secret
                   namespace: openshift-config
                 data:
-                  htpasswd: Y2x1c3RlcmFkbWluOiRhcHIxJEhlckd0cEhMJEdORDB5RTNJVHM0am9CMTJGRlIzRi4Kb2JzZXJ2ZXI6JGFwcjEkZXR2OXlZRWskakdLRTZMa0xCZDhrZHJMaFlnZkJpLwphZG1pbjokYXByMSRYREwwZGJXUSRrRGlxWnR2eU1FdXB1ZHFzS1BjSXMxCmVkaXRvcjokYXByMSQ0dWhHZXFqVCRJMUlmd21qQXh5RU84MUtrQm9GNUYuCmRldmVsb3BlcjokYXByMSRSYmpPbUtXQiQ4M0t3VFlFNENSR3lVNmoueUNtOHEuCg==
+                  htpasswd: Y2x1c3RlcmFkbWluOiQyeSQwNSRGanI2ZjRkczhTaVozTTVVQ2Z6c2dPcktEc053amlQejZJYjVUMmNsOVRRTjBEWnc3WXoxUwphZG1pbjokMnkkMDUkMG95QVYyb3NrY2FrZDBnemVPSGE0T0dhaFV1RlFCaEpKeFJLWTVnelA0UVJsMmM5SDVwd2kKZWRpdG9yOiQyeSQwNSRHY3AyMUtFdmduOFhTempVZnk3ZHcuQ3gxbTVocW5GZXJCUUtHc0tkdUlBRXA5eURqdVdIcQpvYnNlcnZlcjokMnkkMDUkQmsxdGNhcDNWRlNxOG1OMGNOek9RZTltMk9zZFVrQUZTcWJoYklWblBzZmJLblIvanQ2VDIKYWRtaW4wMTokMnkkMDUkOC9GZXQ1bXkvUE5LQkRkUkUxVzVIZUg4d293R0wuWTltWThoNWlVUHJ1blo0dTFxZk8vNUcKYWRtaW4wMjokMnkkMDUkMUhrWjhmZ1ZweVFXQzh5ZHQ4VnF0LnQxVFphY3lTTmZjanlxLmZDdUx1TndCVXpsQVVYenEK
                 type: Opaque
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
