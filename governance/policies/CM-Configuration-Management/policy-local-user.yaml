@@ -30,7 +30,7 @@ spec:
                   name: htpass-secret
                   namespace: openshift-config
                 data:
-                  htpasswd: Y2x1c3RlcmFkbWluOiQyeSQwNSRGanI2ZjRkczhTaVozTTVVQ2Z6c2dPcktEc053amlQejZJYjVUMmNsOVRRTjBEWnc3WXoxUwphZG1pbjokMnkkMDUkMG95QVYyb3NrY2FrZDBnemVPSGE0T0dhaFV1RlFCaEpKeFJLWTVnelA0UVJsMmM5SDVwd2kKZWRpdG9yOiQyeSQwNSRHY3AyMUtFdmduOFhTempVZnk3ZHcuQ3gxbTVocW5GZXJCUUtHc0tkdUlBRXA5eURqdVdIcQpvYnNlcnZlcjokMnkkMDUkQmsxdGNhcDNWRlNxOG1OMGNOek9RZTltMk9zZFVrQUZTcWJoYklWblBzZmJLblIvanQ2VDIKYWRtaW4wMTokMnkkMDUkOC9GZXQ1bXkvUE5LQkRkUkUxVzVIZUg4d293R0wuWTltWThoNWlVUHJ1blo0dTFxZk8vNUcKYWRtaW4wMjokMnkkMDUkMUhrWjhmZ1ZweVFXQzh5ZHQ4VnF0LnQxVFphY3lTTmZjanlxLmZDdUx1TndCVXpsQVVYenEK
+                  htpasswd: Y2x1c3RlcmFkbWluOiQyeSQwNSRGanI2ZjRkczhTaVozTTVVQ2Z6c2dPcktEc053amlQejZJYjVUMmNsOVRRTjBEWnc3WXoxUwphZG1pbjokMnkkMDUkMG95QVYyb3NrY2FrZDBnemVPSGE0T0dhaFV1RlFCaEpKeFJLWTVnelA0UVJsMmM5SDVwd2kKZWRpdG9yOiQyeSQwNSRHY3AyMUtFdmduOFhTempVZnk3ZHcuQ3gxbTVocW5GZXJCUUtHc0tkdUlBRXA5eURqdVdIcQpvYnNlcnZlcjokMnkkMDUkQmsxdGNhcDNWRlNxOG1OMGNOek9RZTltMk9zZFVrQUZTcWJoYklWblBzZmJLblIvanQ2VDIKYWRtaW4wMTokMnkkMDUkOC9GZXQ1bXkvUE5LQkRkUkUxVzVIZUg4d293R0wuWTltWThoNWlVUHJ1blo0dTFxZk8vNUcKYWRtaW4wMjokMnkkMDUkMUhrWjhmZ1ZweVFXQzh5ZHQ4VnF0LnQxVFphY3lTTmZjanlxLmZDdUx1TndCVXpsQVVYenEKYXdzLWFkbTokMnkkMDUkQS5JQVhERk9KcExtRy96elIzb3QuZWxZYjFQc0NCRGhpNkpLRXFtaFNlUXdzckp2VFRZci4KZGV2LWFkbTokMnkkMDUkRnd2dmF1d0Iyb3FuLnBBTnJQajRzTzhZOTR5SlBSVFhxUnZESmlhTktCN1hmZmNsQUZjb3kK
                 type: Opaque
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
