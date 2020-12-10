@@ -6,6 +6,7 @@ metadata:
     policy.open-cluster-management.io/standards: NIST SP 800-53
     policy.open-cluster-management.io/categories: CM Configuration Management
     policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
+spec:
   disabled: false
   policy-templates:
     - objectDefinition:
@@ -29,11 +30,11 @@ metadata:
                 spec:
                   channel: stable-4.6
                   desiredUpdate:
-                    version: 4.6.4
+                    version: 4.6.4 
                   upstream: 'https://api.openshift.com/api/upgrades_info/v1/graph'
           remediationAction: inform
           severity: high
-  remediationAction: enforce
+  remediationAction: inform
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
