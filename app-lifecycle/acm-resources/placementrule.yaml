@@ -6,7 +6,7 @@ metadata:
   labels:
     app: etherpad-app 
 spec:
-  #clusterReplicas: 1
+  clusterReplicas: 2
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
