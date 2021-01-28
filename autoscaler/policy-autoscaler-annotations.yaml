@@ -1,0 +1,68 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: Policy
+metadata:
+  name: policy-pod-annotations
+  annotations:
+    policy.open-cluster-management.io/standards: NIST SP 800-53
+    policy.open-cluster-management.io/categories: CM Configuration Management
+    policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
+spec:
+  disabled: false
+  policy-templates:
+    - objectDefinition:
+        apiVersion: policy.open-cluster-management.io/v1
+        kind: ConfigurationPolicy
+        metadata:
+          name: policy-autoscaler-annotation
+        spec:
+          remediationAction: enforce # will be overridden by remediationAction in parent policy
+          severity: low
+          object-templates:
+            - complianceType: mustnothave
+              objectDefinition:
+                apiVersion: autoscaling.openshift.io/v1
+                kind: ClusterAutoscaler
+                metadata:
+                  name: default
+                spec:
+                  balanceSimilarNodeGroups: true
+                  podPriorityThreshold: -10
+                  resourceLimits:
+                    maxNodesTotal: 12
+                    cores:
+                      min: 20
+                      max: 48
+                    memory:
+                      min: 80
+                      max: 156
+                  scaleDown:
+                    enabled: true
+                    delayAfterAdd: 5m
+                    delayAfterDelete: 5m
+                    delayAfterFailure: 5m
+                    unneededTime: 60s
+---
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: binding-policy-autoscaler-annotations
+placementRef:
+  name: placement-policy-autoscaler-annotations
+  kind: PlacementRule
+  apiGroup: apps.open-cluster-management.io
+subjects:
+- name: policy-autoscaler-annotations
+  kind: Policy
+  apiGroup: policy.open-cluster-management.io
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: placement-policy-autoscaler-annotations
+spec:
+  clusterConditions:
+  - status: "True"
+    type: ManagedClusterConditionAvailable
+  clusterSelector:
+    matchExpressions:
+      - {key: environment, operator: In, values: ["dev"]}
