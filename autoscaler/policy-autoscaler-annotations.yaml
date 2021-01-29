@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: policy-pod-annotations
+  name: policy-autoscaler
   annotations:
     policy.open-cluster-management.io/standards: NIST SP 800-53
     policy.open-cluster-management.io/categories: CM Configuration Management
@@ -15,10 +15,10 @@ spec:
         metadata:
           name: policy-autoscaler-annotation
         spec:
-          remediationAction: enforce # will be overridden by remediationAction in parent policy
+          remediationAction: inform # will be overridden by remediationAction in parent policy
           severity: low
           object-templates:
-            - complianceType: mustnothave
+            - complianceType: musthave
               objectDefinition:
                 apiVersion: autoscaling.openshift.io/v1
                 kind: ClusterAutoscaler
@@ -65,4 +65,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["dev"]}
+      - {key: env, operator: In, values: ["dev"]}
