@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: autoscaler-policy
+  name: autoscaler-machineset-policy
   annotations:
     policy.open-cluster-management.io/standards: NIST SP 800-53
     policy.open-cluster-management.io/categories: CM Configuration Management
@@ -14,34 +14,11 @@ spec:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
         metadata:
-          name: policy-autoscaler-annotation
+          name: policy-autoscaler-machineset-annotation
         spec:
           remediationAction: inform # will be overridden by remediationAction in parent policy
           severity: low
           object-templates:
-            - complianceType: musthave
-              objectDefinition:
-                apiVersion: autoscaling.openshift.io/v1
-                kind: ClusterAutoscaler
-                metadata:
-                  name: default
-                spec:
-                  balanceSimilarNodeGroups: true
-                  podPriorityThreshold: -10
-                  resourceLimits:
-                    maxNodesTotal: 12
-                    cores:
-                      min: 20
-                      max: 48
-                    memory:
-                      min: 80
-                      max: 156
-                  scaleDown:
-                    enabled: true
-                    delayAfterAdd: 5m
-                    delayAfterDelete: 5m
-                    delayAfterFailure: 5m
-                    unneededTime: 60s
             - complianceType: musthave
               objectDefinition:
                 apiVersion: autoscaling.openshift.io/v1beta1
@@ -60,9 +37,9 @@ spec:
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
-  name: binding-policy-autoscaler-annotations
+  name: binding-policy-autoscaler-machineset-annotations
 placementRef:
-  name: placement-policy-autoscaler-annotations
+  name: placement-policy-autoscaler-machineset-annotations
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
