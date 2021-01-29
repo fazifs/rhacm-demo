@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: default
-  version: 1.1
+  labels:
+    image: 1.14.2
 spec:
   selector:
     matchLabels:
