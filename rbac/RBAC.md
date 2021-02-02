@@ -7,7 +7,7 @@ Create 4 users in the Hub cluster:
 
 The cluster-admin user is going to be a cluster admin, the admin user only will only manage the aws-managed1 cluster, editor will have edit permissions and the editor user will have just read permissions.
 
-# Create a cluster admin role
+# Assign the cluster admin role
 
 Assign clusterrole to user cluster-admin
 oc adm policy add-cluster-role-to-user open-cluster-management:cluster-manager-admin cluster-admin
