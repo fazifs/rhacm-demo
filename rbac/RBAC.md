@@ -1,4 +1,4 @@
-######  Cluster Lifecycle RBAC  ######
+# Cluster Lifecycle RBAC
 Create 4 users in the Hub cluster:
 - cluster-admin
 - admin
