@@ -1,0 +1,17 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  namespace: dev-ex-dashboard
+  name: dev-ex-dashboard-placement
+  labels:
+    app: dev-ex-dashboard
+spec:
+  clusterReplicas: 1
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      environment: dev
+

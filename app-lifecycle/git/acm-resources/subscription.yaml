@@ -6,7 +6,7 @@ metadata:
   labels:
     app: etherpad-app
   annotations:
-    apps.open-cluster-management.io/git-path: app-lifecycle/etherpad
+    apps.open-cluster-management.io/git-path: app-lifecycle/git/etherpad
     apps.open-cluster-management.io/git-branch: master
 spec:
   channel: etherpad/etherpad-app-latest
