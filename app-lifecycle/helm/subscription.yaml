@@ -1,0 +1,17 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  namespace: dev-ex-dashboard
+  name: dev-ex-dashboard-subscription
+  labels:
+    app: dev-ex-dashboard
+spec:
+  name: dev-ex-dashboard
+  channel: dev-ex-dashboard/helm-charts-redhat-cop
+  packageFilter:
+    version: 0.0.2
+  placement:
+    placementRef:
+      name: dev-ex-dashboard-placement
+      kind: PlacementRule

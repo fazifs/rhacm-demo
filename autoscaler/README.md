@@ -69,9 +69,3 @@ cluster-3707-cpl8m-worker-eu-west-1b-nklf5   Running       m5a.2xlarge   eu-west
 ```
 watch -n10 'oc get machines -n openshift-machine-api'
 ```
-
-
-
-
-
-
