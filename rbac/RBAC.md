@@ -14,7 +14,11 @@ oc adm policy add-cluster-role-to-user open-cluster-management:cluster-manager-a
 
 # Administer a managed cluster named aws-managed1:
 
-oc adm policy remove-role-from-user open-cluster-management:managedcluster:aws-managed1 admin
+oc adm policy add-cluster-role-to-user open-cluster-management:managedcluster:aws-managed1 <user>
+oc adm policy add-role-to-user admin <user> -n <cluster-name>
+
+Example:
+oc adm policy add-cluster-role-to-user open-cluster-management:managedcluster:aws-managed1 admin
 oc adm policy add-role-to-user admin admin -n aws-managed1
 
 # Assig roles to editor and viewer users
