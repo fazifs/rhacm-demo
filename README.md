@@ -1,8 +1,8 @@
 # RHACM-demo
 
-Repo to deliver RH ACM product demos
-
 <img align="center" width="150" src="assets/logo.jpg">
+
+Repo to deliver RH ACM product demos
 
 ## App Lifecycle
 
