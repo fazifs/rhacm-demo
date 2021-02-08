@@ -32,13 +32,13 @@ The cluster-user is able to manage one cluster and deploy apps an policies on it
 
 The cluster-role **open-cluster-management:managedcluster:aws-managed1** allows a user to interact with this concrete cluster but not with others.
 
-The cluster-role **open-cluster-management:subscription-admin** allows a user to be able to create and deploy objects in the namespaces managed by ACM without this permision the user would be able just to create and deploy in the namespace where the user has permissions.
+If we want to use policies or deploy apps we need at least an extra ns where we need to have the role admin in order to create an destroy resources in that namespace. In this particular example we will use the ns default
 
 $ oc adm policy add-cluster-role-to-user **open-cluster-management:managedcluster:aws-managed1** cluster-user
 
-$ oc adm policy add-cluster-role-to-user **open-cluster-management:subscription-admin** cluster-user
-
 $ oc adm policy add-role-to-user admin cluster-user -n aws-managed1
+
+$ oc adm policy add-role-to-user admin cluster-user -n default
 
 ### EDITOR
 
