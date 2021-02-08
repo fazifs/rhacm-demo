@@ -2,7 +2,7 @@
 
 Repo to deliver RH ACM product demos
 
-<img align="center" width="100" src="assets/logo.jpg">
+<img align="center" width="150" src="assets/logo.jpg">
 
 ## App Lifecycle
 
