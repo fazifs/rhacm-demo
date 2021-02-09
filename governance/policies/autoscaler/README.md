@@ -1,40 +1,24 @@
 ## Autoscaler
 
-### Generate Custom MachineAutoscalers
-
-* Fetch the machineset in your cluster:
+* Fetch the first machineset in your cluster:
 
 ```
-export MACHINESETS=$(oc get machineset -n openshift-machine-api -o json | jq '.items[]|.metadata.name' -r )
+MACHINESET=$(oc get machineset -n openshift-machine-api -o json | jq .'items[0]|.metadata.name' -r)
 ```
 
-* Construct the machineautoscaler based in a template and customize them with the specific machineset
+* Adjust Machineset (lines 50 and 58) in the policy-autoscaler yaml
 
 ```
-for ms in $MACHINESETS; do export MACHINESET=$ms; envsubst < machineautoscaler.yml > machineautoscaler-$ms.yml; done
+sed -i 's/changeme/$MACHINESET/g' policy-autoscaler.yml
 ```
 
-* Check the machineautoscaler generated
+* Apply the clusterautoscaler policy
 
 ```
-ls | grep machineautoscaler-cluster
+oc apply -f policy-autoscaler.yml
 ```
 
-### Apply the ClusterAutoscaler & MachineAutoscaler
-
-* Apply the clusterautoscaler
-
-```
-oc apply -f clusterautoscaler.yml
-```
-
-* Apply the machineautoscalers (each for each AZ or only one)
-
-```
-for i in $(ls | grep machineautoscaler-cluster); do oc apply -f $i ; done
-```
-
-* Check that the machineautoscaler are applied properly
+* Check that the machineautoscaler and the clusterautoscaler are applied properly
 
 ```
 oc get machineautoscaler -n openshift-machine-api

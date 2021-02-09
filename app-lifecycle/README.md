@@ -21,6 +21,10 @@ oc apply -k git/acm-resources/
 oc apply -k helm/
 ```
 
+## For Object Storage (Ongoing)
+
+TBD
+
 ## Enjoy!
 
 All the resources will be created on the Hub cluster, after that the etherpad app will be deployed to the clusters affected by the placement rule
