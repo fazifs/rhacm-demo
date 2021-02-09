@@ -5,32 +5,32 @@ You can find this process in the official documentation in here: https://access.
 
 The process in simple and you can find it explained here.
 
-[1. Create a namespace called open-cluster-management-observability in the Hub cluster]
+#### [1. Create a namespace called open-cluster-management-observability in the Hub cluster]
 ```
 oc create namespace open-cluster-management-observability
 ```
 
-[2. Create a bucket in aws/gcp/azure/ceph]
+#### [2. Create a bucket in aws/gcp/azure/ceph]
 We will use this bucket to store data from the managed clusters that Thanos will consume and present to a Graphana dashboard
 
 ```
 aws s3api create-bucket --bucket obs-thanos --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
 ```
 
-[3. Create a secret to access this bucket]
+#### [3. Create a secret to access this bucket]
 
 ```
 oc apply -f thanos-storage.yaml
 ```
 
-[4. Create a pull secret in the open-cluster-management-observability namespace] 
+#### [4. Create a pull secret in the open-cluster-management-observability namespace] 
 If the pull secret is not present we will have problems.
 
 ```
 oc create secret generic multiclusterhub-operator-pull-secret --from-file=.dockercfg=<path/to/.dockercfg> --type=kubernetes.io/dockercfg
 ```
 
-[5. Now is time to create the MultiClusterObservability custom resource (mco CR).]
+#### [5. Now is time to create the MultiClusterObservability custom resource (mco CR).]
 When created this mco object the operator will trigger the installation of all the components
 
 ```
