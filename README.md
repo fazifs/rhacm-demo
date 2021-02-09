@@ -10,4 +10,6 @@ Repo to deliver RH ACM product demos
 
 ### [3. End2End Visibility](observability/README.md)
 
-### [4. Rbac](rbac/README.md)
+### [4. Cluster Lifecycle](cluster-lifecycle/README.md)
+
+### [5. Rbac](rbac/README.md)
