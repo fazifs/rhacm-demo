@@ -4,8 +4,10 @@
 
 Repo to deliver RH ACM product demos
 
-## [App Lifecycle](app-lifecycle/README.md)
+### [1. App Lifecycle](app-lifecycle/README.md)
 
-## [Governance](governance/README.md)
+### [2. Governance](governance/README.md)
 
-## [Rbac](rbac/RBAC.md)
+### [3. End2End Visibility](observability/README.md)
+
+### [4. Rbac](rbac/README.md)
