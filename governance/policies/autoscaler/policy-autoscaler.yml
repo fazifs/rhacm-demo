@@ -47,7 +47,7 @@ spec:
                 apiVersion: autoscaling.openshift.io/v1beta1
                 kind: MachineAutoscaler
                 metadata:
-                  name: autoscaler-cluster-7695-5k266-worker-eu-west-1a
+                  name: autoscaler-cluster-changeme
                   namespace: openshift-machine-api
                 spec:
                   minReplicas: 1
@@ -55,7 +55,7 @@ spec:
                   scaleTargetRef:
                     apiVersion: machine.openshift.io/v1beta1
                     kind: MachineSet
-                    name: cluster-7695-5k266-worker-eu-west-1a
+                    name: changeme
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
