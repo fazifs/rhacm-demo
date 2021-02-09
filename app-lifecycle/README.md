@@ -1,8 +1,14 @@
-# Usage
+# App LifeCycle
 
-1. First of all oc client installed and working
+## Prerequisites:
 
-2. Log in to the Hub cluster from your terminal (oc login ....)
+* Oc login to the cluster
+
+```
+oc login -u user1
+```
+
+* Git clone the rhacm demo
 
 ```
 git clone https://github.com/avaleror/rhacm-demo.git
