@@ -18,9 +18,9 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: toweraccess
-  namespace: etherpad
+  namespace: default
 data:
-  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hd3MtbWFuYWdlZDEuZmExMi5zYW5kYm94MTc1MS5vcGVudGxjLmNvbQ==
-  token: d01DejU2cGQwemdyU3NycDFaNE5JNEpSdmJPVnFy
+  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hY21odWIuZjA2Zi5zYW5kYm94NTQ1Lm9wZW50bGMuY29t
+  token: SGtFV21NZkg3dVFQaExMc3FMUXBCN21JS0JJbEhD
 type: Opaque
 
