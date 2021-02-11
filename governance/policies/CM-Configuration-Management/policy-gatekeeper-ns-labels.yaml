@@ -83,7 +83,7 @@ spec:
                   name: ns-must-have-gk
                 status:
                   totalViolations: 0
-  remediationAction: enforce
+  remediationAction: inform
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
