@@ -62,7 +62,7 @@ spec:
                         kinds:
                           - Namespace
                     namespaces:
-                      - acm-gatekeeper
+                      - acm*
                   parameters:
                     labels:
                       - gatekeeper
