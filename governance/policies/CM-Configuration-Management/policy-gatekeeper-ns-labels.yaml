@@ -83,7 +83,7 @@ spec:
                   name: ns-must-have-gk
                 status:
                   totalViolations: 0
-  remediationAction: inform
+  remediationAction: enforce
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
@@ -110,5 +110,5 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["dev"]}
+      - {key: vendor, operator: In, values: ["openshift"]}
 
