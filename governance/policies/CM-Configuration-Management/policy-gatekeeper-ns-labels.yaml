@@ -57,15 +57,11 @@ spec:
                 spec:
                   match:
                     kinds:
-                    - apiGroups:
-                      - ""
-                      kinds:
-                      - Namespace
-                    namespaces:
-                    - acm-gatekeeper
+                      - apiGroups: [""]
+                        kinds: ["Namespace"]
+                    namespaces: ["acm-gatekeeper"]
                   parameters:
-                    labels:
-                    - gatekeeper
+                    labels: ["gatekeeper"]
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
