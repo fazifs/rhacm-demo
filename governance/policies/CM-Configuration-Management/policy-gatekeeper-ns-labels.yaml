@@ -9,14 +9,15 @@ metadata:
     policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
 spec:
   disabled: false
+  remediationAction: enforce
   policy-templates:
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
         metadata:
-          name: policy-gatekeeper-k8srequiredlabels
+          name: policy-gatekeeper-constrainttemplate-k8srequiredlabels
         spec:
-          remediationAction: enforce
+          remediationAction: inform
           severity: low
           object-templates:
             - complianceType: musthave
@@ -48,6 +49,15 @@ spec:
                           count(missing) > 0
                           msg := sprintf("you must provide labels: %v", [missing])
                         }
+    - objectDefinition:
+        apiVersion: policy.open-cluster-management.io/v1
+        kind: ConfigurationPolicy
+        metadata:
+          name: policy-gatekeeper-constraint-k8srequiredlabels
+        spec:
+          remediationAction: inform
+          severity: low
+          object-templates:
             - complianceType: musthave
               objectDefinition:
                 apiVersion: constraints.gatekeeper.sh/v1beta1
@@ -79,7 +89,6 @@ spec:
                   name: ns-must-have-gk
                 status:
                   totalViolations: 0
-  remediationAction: enforce
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
