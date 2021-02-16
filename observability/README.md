@@ -24,7 +24,7 @@ oc apply -f thanos-storage.yaml
 ```
 
 #### 4. Create a pull secret in the open-cluster-management-observability namespace 
-If the pull secret is not present we will have problems.
+If the pull secret is not present we will have problems, create the secret unless you created it in the open-cluster management with the same name defined in the observability.yaml
 
 ```
 oc create secret generic multiclusterhub-operator-pull-secret --from-file=.dockercfg=<path/to/.dockercfg> --type=kubernetes.io/dockercfg
