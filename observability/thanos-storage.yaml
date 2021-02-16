@@ -8,7 +8,7 @@ stringData:
   thanos.yaml: |
     type: s3
     config:
-      bucket: acm-hub-bucket
+      bucket: obs-thanos ##whatever name you gave to the bucket
       endpoint: s3.eu-north-1.amazonaws.com
       insecure: false
       access_key: ******   # AWS access key, accound where the bucket is created
