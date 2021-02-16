@@ -1,6 +1,6 @@
 # Import Policies into ACM in the GitOps way
 
-From this repo you  can create a policies repo, in the acm-resources folder you'll find three different folders with configurations for policies. When you use this you'll create a subscriptions repo inside RHACM. If you want to change something in a policy like the labels, the enforcement, etc. you need to senda PR to the repo defined in the channel in order to do so.
+From this repo you  can create a policies repo, in the acm-resources folder you'll find different folders with configurations for policies. When you use this you'll create a subscriptions repo inside RHACM. If you want to change something in a policy like the labels, the enforcement, etc. you need to senda PR to the repo defined in the channel in order to do so.
 
 ### How to use this repo
 Inside the acm-resources folder, you'll find a folder named Common-Resources and inside of it you can find the channel and the namespace+secret creation for all policies. These objects have to be present, execute the next command:
