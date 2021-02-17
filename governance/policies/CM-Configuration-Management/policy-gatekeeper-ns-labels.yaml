@@ -8,7 +8,7 @@ metadata:
     policy.open-cluster-management.io/categories: CM Configuration Management
     policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
 spec:
-  disabled: true
+  disabled: false
   remediationAction: inform
   policy-templates:
     - objectDefinition:
@@ -115,5 +115,5 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: vendor, operator: In, values: ["OpenShift"]}
+      - {key: name, operator: In, values: ["test"]}
 
