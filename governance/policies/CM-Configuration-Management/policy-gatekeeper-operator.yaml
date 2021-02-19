@@ -137,4 +137,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: name, operator: In, values: ["test"]}
+      - {key: gatekeeper, operator: In, values: ["enabled"]}
