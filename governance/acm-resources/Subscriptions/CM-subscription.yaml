@@ -4,8 +4,8 @@ kind: Subscription
 metadata:
   name: demo-policies
   namespace: acm-policies
-#  labels:
-#    app: policies-demo
+  labels:
+    app: policies-demo
   annotations:
     apps.open-cluster-management.io/github-path: governance/policies/CM-Configuration-Management
     apps.open-cluster-management.io/github-branch: master
