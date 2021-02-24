@@ -1,0 +1,10 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: helm-charts-redhat-cop
+  namespace: dev-ex-dashboard
+spec:
+  pathname: https://redhat-cop.github.io/helm-charts
+  type: HelmRepo
+

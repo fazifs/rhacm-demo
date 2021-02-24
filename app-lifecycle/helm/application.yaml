@@ -1,0 +1,17 @@
+---
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  namespace: dev-ex-dashboard
+  name: dev-ex-dashboard
+  annotations: {}
+spec:
+  selector:
+    matchExpressions:
+    - key: app
+      operator: In
+      values:
+      - dev-ex-dashboard
+  componentKinds:
+    - group: apps.open-cluster-management.io
+      kind: Subscription
