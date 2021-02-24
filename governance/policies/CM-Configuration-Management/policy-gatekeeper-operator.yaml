@@ -7,7 +7,7 @@ metadata:
     policy.open-cluster-management.io/categories: CM Configuration Management
     policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
 spec:
-  remediationAction: inform
+  remediationAction: enforce
   disabled: false
   policy-templates:
   - objectDefinition:
@@ -108,6 +108,7 @@ spec:
                 image:
                   image: 'docker.io/openpolicyagent/gatekeeper:v3.3.0'
                 validatingWebhook: Enabled
+                mutatingWebhook: Disabled
                 webhook:
                   emitAdmissionEvents: Enabled
                   logLevel: INFO
@@ -136,4 +137,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["dev"]}
+      - {key: gatekeeper, operator: In, values: ["enabled"]}
