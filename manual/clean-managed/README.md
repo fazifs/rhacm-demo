@@ -11,5 +11,8 @@ Testing is in progress
 ### Usage
 
 ```
-curl https://raw.githubusercontent.com/ocp-tigers/rhacm-demo/develop/manual/clean-managed/clean-managed.sh?token=ABKJKOK32YITRLNMQVBZ2MTAHY7LK | bash
+git clone https://github.com/ocp-tigers/rhacm-demo
+cd rhacm-demo/manual/clean-managed
+chmod u+x clean-managed.sh
+bash clean-managed.sh
 ```
