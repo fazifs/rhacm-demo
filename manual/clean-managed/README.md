@@ -7,3 +7,9 @@ This script tries to clean all the objects (CRDs, CRs, ClusterRoles/Bindings, Na
 the open-cluster-management agents in the cluster.
 
 Testing is in progress
+
+### Usage
+
+```
+curl https://raw.githubusercontent.com/ocp-tigers/rhacm-demo/develop/manual/clean-managed/clean-managed.sh?token=ABKJKOK32YITRLNMQVBZ2MTAHY7LK | bash
+```
