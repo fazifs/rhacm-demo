@@ -8,7 +8,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: acm-app-secret
-  namespace: etherpad
+  namespace: pacman
 data:
   accessToken: YmM2M2JhNTFhOWI5MWY4N2ExMGY5ZmEzMGQ4Mzg1MzNmMzhkOGY5YQ==
   user: YXZhbGVyb3I=
