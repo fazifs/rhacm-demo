@@ -1,4 +1,3 @@
----
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
@@ -6,6 +5,4 @@ metadata:
   namespace: acm-policies
 spec:
   type: GitHub
-  pathname: https://github.com/ocp-tigers/rhacm-demo.git
-  secretRef:
-    name: acm-policies-secret
+  pathname: https://github.com/avaleror/nvs_demo.git
