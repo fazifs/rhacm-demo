@@ -13,7 +13,7 @@ spec:
   channel: acm-policies/demo-policies
   placement:
     local: true
-  packageFilter:
-    filterRef:
-      name: demo-policies-github
+#  packageFilter:
+#    filterRef:
+#      name: demo-policies-github
 
