@@ -1,0 +1,16 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: podinfo-pr
+  namespace: podinfo
+  labels:
+    app: podinfo-app
+spec:
+  clusterReplicas: 2
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      environment: dev
+      #vendor: OpenShift
