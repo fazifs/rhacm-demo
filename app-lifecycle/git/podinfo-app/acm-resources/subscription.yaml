@@ -6,7 +6,7 @@ metadata:
   labels:
     app: podinfo-app
   annotations:
-    apps.open-cluster-management.io/git-path: app-lifecycle/git/podinfo-app
+    apps.open-cluster-management.io/git-path: app-lifecycle/git/podinfo-app/podinfo
     apps.open-cluster-management.io/git-branch: master
 spec:
   channel: podinfo/podinfo-app-latest
