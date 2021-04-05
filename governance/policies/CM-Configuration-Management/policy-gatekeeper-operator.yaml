@@ -16,7 +16,7 @@ spec:
       metadata:
         name: gatekeeper-operator-ns
       spec:
-        remediationAction: inform
+        remediationAction: enforce
         severity: high
         object-templates:
           - complianceType: musthave
@@ -31,7 +31,7 @@ spec:
       metadata:
         name: gatekeeper-operator-catalog-source
       spec:
-        remediationAction: inform
+        remediationAction: enforce
         severity: high
         object-templates:
           - complianceType: musthave
@@ -55,7 +55,7 @@ spec:
       metadata:
         name: gatekeeper-operator-group
       spec:
-        remediationAction: inform
+        remediationAction: enforce
         severity: high
         object-templates:
           - complianceType: musthave
@@ -71,7 +71,7 @@ spec:
       metadata:
         name: gatekeeper-operator-subscription
       spec:
-        remediationAction: inform
+        remediationAction: enforce
         severity: high
         object-templates:
           - complianceType: musthave
@@ -108,7 +108,11 @@ spec:
                 image:
                   image: 'docker.io/openpolicyagent/gatekeeper:v3.3.0'
                 validatingWebhook: Enabled
+<<<<<<< HEAD
+                mutatingWebhook: Enabled
+=======
                 mutatingWebhook: Disabled
+>>>>>>> master
                 webhook:
                   emitAdmissionEvents: Enabled
                   logLevel: INFO
