@@ -108,7 +108,11 @@ spec:
                 image:
                   image: 'docker.io/openpolicyagent/gatekeeper:v3.3.0'
                 validatingWebhook: Enabled
+<<<<<<< HEAD
                 mutatingWebhook: Enabled
+=======
+                mutatingWebhook: Disabled
+>>>>>>> master
                 webhook:
                   emitAdmissionEvents: Enabled
                   logLevel: INFO
@@ -137,4 +141,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["dev"]}
+      - {key: gatekeeper, operator: In, values: ["enabled"]}

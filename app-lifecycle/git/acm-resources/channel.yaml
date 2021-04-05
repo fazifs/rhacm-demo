@@ -6,6 +6,7 @@ metadata:
   namespace: etherpad
 spec:
   type: GitHub
-  pathname: https://github.com/avaleror/rhacm-demo.git
+  pathname: https://github.com/ocp-tigers/rhacm-demo.git
+  #pathname: https://github.com/avaleror/rhacm-demo.git
   secretRef:
     name: acm-app-secret
