@@ -11,6 +11,9 @@ spec:
   channel: dev-ex-dashboard/helm-charts-redhat-cop
   packageFilter:
     version: 0.0.2
+  packageOverrides:
+    - packageAlias: my-dev-ex-dashboard
+      packageName: dev-ex-dashboard
   placement:
     placementRef:
       name: dev-ex-dashboard-placement
