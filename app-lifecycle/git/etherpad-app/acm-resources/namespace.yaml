@@ -20,7 +20,7 @@ metadata:
   name: toweraccess
   namespace: etherpad
 data:
-  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hd3MtbWFuYWdlZDEuYzkwMi5zYW5kYm94MTY0Ny5vcGVudGxjLmNvbS8=
-  token: UTU2dll1T2Z0NFBnaDNFd0JGQkdkMHFyWFJIbFl5
+  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5jbHVzdGVyLTlhNTYuOWE1Ni5leGFtcGxlLm9wZW50bGMuY29tLwo=
+  token: A1tNhxiNBzVUvPviybrUuyCTlSEXVe
 type: Opaque
 
