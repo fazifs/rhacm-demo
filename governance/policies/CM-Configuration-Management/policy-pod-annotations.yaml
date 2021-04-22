@@ -27,7 +27,7 @@ spec:
                 kind: Pod
                 metadata:
                   annotations:
-                    podnoise.io/podnoise_log_rows_total: "0"
+                    app: "ACM-Rocks!"
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding

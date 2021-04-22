@@ -108,11 +108,7 @@ spec:
                 image:
                   image: 'docker.io/openpolicyagent/gatekeeper:v3.3.0'
                 validatingWebhook: Enabled
-<<<<<<< HEAD
                 mutatingWebhook: Enabled
-=======
-                mutatingWebhook: Disabled
->>>>>>> master
                 webhook:
                   emitAdmissionEvents: Enabled
                   logLevel: INFO
