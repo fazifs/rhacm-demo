@@ -12,5 +12,5 @@ spec:
       status: "True"
   clusterSelector:
     matchLabels:
-      environment: dev
+      environment: qa
       #vendor: OpenShift
