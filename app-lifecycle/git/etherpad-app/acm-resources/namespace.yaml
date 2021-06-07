@@ -10,7 +10,7 @@ metadata:
   name: acm-app-secret
   namespace: etherpad
 data:
-  accessToken: YmM2M2JhNTFhOWI5MWY4N2ExMGY5ZmEzMGQ4Mzg1MzNmMzhkOGY5YQ==
+  accessToken: Z2hwX3FISnozZlQ3bGQ3dnhtQ0FmWjA2M0hGN0t5dU4xOTJvM0l2Rg==
   user: YXZhbGVyb3I=
 type: Opaque
 ---
