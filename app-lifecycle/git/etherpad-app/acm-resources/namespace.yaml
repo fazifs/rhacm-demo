@@ -10,9 +10,9 @@ metadata:
   name: acm-app-secret
   namespace: etherpad
 data:
-  password: Z2hwX3FISnozZlQ3bGQ3dnhtQ0FmWjA2M0hGN0t5dU4xOTJvM0l2Rg==
-  username: YXZhbGVyb3I=
-type: kubernetes.io/basic-auth
+  accessToken: Z2hwX3FISnozZlQ3bGQ3dnhtQ0FmWjA2M0hGN0t5dU4xOTJvM0l2Rg==
+  user: YXZhbGVyb3I=
+type: Opaque
 ---
 apiVersion: v1
 kind: Secret
