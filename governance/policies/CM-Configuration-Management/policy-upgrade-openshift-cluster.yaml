@@ -30,7 +30,7 @@ spec:
                 spec:
                   channel: stable-4.7
                   desiredUpdate:
-                    version: 4.7.13
+                    version: 4.7.12
                   upstream: 'https://api.openshift.com/api/upgrades_info/v1/graph'
           remediationAction: inform
           severity: high
@@ -59,4 +59,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["dev"]}
+      - {key: version, operator: In, values: ["4.7.12"]}
