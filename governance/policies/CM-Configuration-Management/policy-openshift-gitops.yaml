@@ -67,4 +67,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: appmanager, operator: In, values: ["argo"]}
+      - {key: deployer, operator: In, values: ["argo"]}
