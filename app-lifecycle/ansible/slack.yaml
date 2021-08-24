@@ -8,7 +8,7 @@
     - community.general
   tasks:
   - name: Send notification message via Slack
-    slack:
+    community.general.slack:
       token: "{{slack_token}}"
       msg: 'The app "{{APPLICATION}}" has been deployed successfully'
     delegate_to: localhost
