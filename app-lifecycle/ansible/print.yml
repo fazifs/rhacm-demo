@@ -1,0 +1,10 @@
+---
+- name: testing
+  hosts: localhost
+
+  tasks: 
+
+   - name: Prints messages, 
+     ansible.builtin.debug:
+        msg:
+        - "Your Ansible Job is running"
