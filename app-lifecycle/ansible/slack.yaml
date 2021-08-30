@@ -9,5 +9,5 @@
   - name: Send notification message via Slack
     slack:
       token: "{{slack_token}}"
-      msg: 'The app "{{APPLICATION}}" has been deployed successfully to cluster "{{target_clusters}}"
+      msg: 'The app "{{APPLICATION}}" has been deployed successfully to cluster "{{target_clusters|first}}"
     delegate_to: localhost
