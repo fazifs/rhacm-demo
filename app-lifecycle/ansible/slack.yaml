@@ -3,7 +3,7 @@
   hosts: localhost
   vars:
     - slack_token: T01DXJFQCJJ/B01EU1RS0JD/KRHbXridaKyyNdp45l7NLIuJ
-    - app: Etherpad
+    - APLICATION: Etherpad
   collections:
     - community.general
   tasks:
