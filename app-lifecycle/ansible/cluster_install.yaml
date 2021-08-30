@@ -9,6 +9,5 @@
   - name: Send notification message via Slack
     slack:
       token: "{{ slack_token }}"
-      msg: 'The cluster "{{ item }}" has been provisioned'
-    with_items: "{{ target_clusters }}"
+      msg: 'The cluster "{{ clusterName }}" has been provisioned'
     delegate_to: localhost
