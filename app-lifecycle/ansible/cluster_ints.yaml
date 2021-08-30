@@ -1,5 +1,5 @@
 ---
-- name: Test Slack Integration Module
+- name: Cluster provision notification
   hosts: localhost
   vars:
     - slack_token: T01DXJFQCJJ/B01EU1RS0JD/KRHbXridaKyyNdp45l7NLIuJ
@@ -8,6 +8,7 @@
   tasks:
   - name: Send notification message via Slack
     slack:
-      token: "{{slack_token}}"
-      msg: 'The app "{{APPLICATION}}" has been deployed successfully'
+      token: "{{ slack_token }}"
+      msg: 'The cluster "{{ item }}" has been provisioned'
+    with_items: "{{ target_clusters }}"
     delegate_to: localhost
