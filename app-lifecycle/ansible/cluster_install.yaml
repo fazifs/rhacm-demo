@@ -9,5 +9,5 @@
   - name: Send notification message via Slack
     slack:
       token: "{{ slack_token }}"
-      msg: 'The cluster "{{ clusterName }}" has been provisioned'
+      msg: 'The cluster "{{ cluster_deployment.clusterName }}" has been provisioned'
     delegate_to: localhost
