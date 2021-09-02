@@ -7,12 +7,12 @@
     - community.general
   tasks:
     - name: Send message
-    telegram:
-      token: "{{ tokenBot }}"
-      api_args:
-        chat_id: "{{ chatID }}"
-        parse_mode: "markdown"
-        text: 'The test has been successful'
-        disable_web_page_preview: True
-        disable_notification: True
+      telegram:
+        token: "{{ tokenBot }}"
+        api_args:
+          chat_id: "{{ chatID }}"
+          parse_mode: "markdown"
+          text: 'The test has been successful'
+          disable_web_page_preview: True
+          disable_notification: True
   
