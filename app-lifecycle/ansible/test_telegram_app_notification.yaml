@@ -8,8 +8,8 @@
   tasks:
     - name: Send message
       telegram:
-        token: "{{ tokenBot }}"
         api_args:
+          token: "{{ tokenBot }}"
           chat_id: "{{ chatID }}"
           #msg_format: "markdown"
           msg: 'The test has been successful'
