@@ -8,9 +8,9 @@
   tasks:
     - name: Send message
     telegram:
-      token: "{{ TOKEN }}"
+      token: "{{ tokenBot }}"
       api_args:
-        chat_id: "{{ CHAT_ID }}"
+        chat_id: "{{ chatID }}"
         parse_mode: "markdown"
         text: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
         disable_web_page_preview: True
