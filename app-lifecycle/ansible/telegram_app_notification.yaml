@@ -7,12 +7,8 @@
     - community.general
   tasks:
     - name: Send message
-    telegram:
-      token: "{{ tokenBot }}"
-      api_args:
+      telegram:
+        token: "{{ tokenBot }}"
         chat_id: "{{ chatID }}"
-        parse_mode: "markdown"
-        text: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
-        disable_web_page_preview: True
-        disable_notification: True
+        msg: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
   
