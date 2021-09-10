@@ -10,6 +10,5 @@
       telegram:
         token: "{{ tokenBot }}"
         chat_id: "{{ chatID }}"
-        #msg_format: "markdown"
-        msg: 'The test has been successful'
+        msg: 'The cluster "{{ cluster_deployment.clusterName }}" has been provisioned'
   
