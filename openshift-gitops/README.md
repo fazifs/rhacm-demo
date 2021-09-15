@@ -5,6 +5,6 @@
 3. ```oc apply -f gitops-config.yaml``` 
 4. This will create all the pieces needed to use a central Argo to deploy to all the clusters in the clusterset based on labels.
 
-
-** Take into account that gitops-config.yaml needs to be modified to meet your requirements.
-** If you use ArgoCD instead of OpenHift GitOps you need to adjust the namespace where all the parts will be deployed.
+NOTES:
+- Take into account that gitops-config.yaml needs to be modified to meet your requirements.
+- If you use ArgoCD instead of OpenHift GitOps you need to adjust the namespace where all the parts will be deployed.
