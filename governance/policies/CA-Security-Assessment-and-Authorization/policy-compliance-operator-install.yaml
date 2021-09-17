@@ -95,4 +95,4 @@ spec:
       type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: compliance, operator: In, values: ["true"]}
+      - {key: compliance-op, operator: In, values: ["true"]}
