@@ -62,6 +62,7 @@ spec:
                 kind: ScanSettingBinding
                 metadata:
                   name: cis-ocp4
+                  namespace: openshift-compliance
                 profiles:
                   # Node CIS checks
                   - name: ocp4-cis-node
