@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/name: etherpad
 spec:
   tower_auth_secret: toweraccess
-  job_template_name: telegram_app_notification
+  job_template_name: telegram-app-notification
   extra_vars:
     #CLUSTER: baremetal-uk
     APPLICATION: Etherpad
