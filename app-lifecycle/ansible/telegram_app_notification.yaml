@@ -1,0 +1,15 @@
+---
+- name: Telegram messaging
+  hosts: localhost
+  vars_files: 
+    - telegram_vars.yml
+  collections: 
+    - community.general
+  tasks:
+    - name: telegram_msg
+      telegram:
+        token: "{{ tokenBot }}"
+        chat_id: "{{ chatID }}"
+        msg: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
+      with_items: "{{ target_clusters }}"
+ 

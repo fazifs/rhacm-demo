@@ -1,0 +1,14 @@
+---
+- name: Telegram messaging
+  hosts: localhost
+  vars_files: 
+    - telegram_vars.yml
+  collections: 
+    - community.general
+  tasks:
+    - name: Send message
+      telegram:
+        token: "{{ tokenBot }}"
+        chat_id: "{{ chatID }}"
+        msg: 'The cluster "{{ cluster_deployment.clusterName }}" has been provisioned'
+  

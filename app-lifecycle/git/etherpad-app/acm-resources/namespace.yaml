@@ -10,7 +10,7 @@ metadata:
   name: acm-app-secret
   namespace: etherpad
 data:
-  accessToken: YmM2M2JhNTFhOWI5MWY4N2ExMGY5ZmEzMGQ4Mzg1MzNmMzhkOGY5YQ==
+  accessToken: Z2hwX3FISnozZlQ3bGQ3dnhtQ0FmWjA2M0hGN0t5dU4xOTJvM0l2Rg==
   user: YXZhbGVyb3I=
 type: Opaque
 ---
@@ -20,7 +20,7 @@ metadata:
   name: toweraccess
   namespace: etherpad
 data:
-  host: YW5zaWJsZS10b3dlci13ZWItc3ZjLXRvd2VyLmFwcHMuY2x1c3Rlci05YTU2LjlhNTYuZXhhbXBsZS5vcGVudGxjLmNvbQ==
-  token: QTF0Tmh4aU5CelZVdlB2aXliclV1eUNUbFNFWFZl
+  host: aHR0cHM6Ly9hbnNpYmxlLXRvd2VyLXdlYi1zdmMtdG93ZXIuYXBwcy5hY20taHViLjg5ZTcuc2FuZGJveDE2NjEub3BlbnRsYy5jb20v
+  token: Q2E3eFlxcDFjN2ZJVlMzVGNTV0I2SVBTNzljSkV1
 type: Opaque
 

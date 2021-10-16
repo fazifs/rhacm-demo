@@ -1,0 +1,13 @@
+---
+- name: Cluster provision notification
+  hosts: localhost
+  vars:
+    - slack_token: T01DXJFQCJJ/B01EU1RS0JD/KRHbXridaKyyNdp45l7NLIuJ
+  collections:
+    - community.general
+  tasks:
+  - name: Send notification message via Slack
+    slack:
+      token: "{{ slack_token }}"
+      msg: 'The cluster "{{ cluster_deployment.clusterName }}" has been provisioned'
+    delegate_to: localhost

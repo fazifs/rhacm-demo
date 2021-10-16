@@ -5,7 +5,8 @@ metadata:
   name: demo-policies-github
   namespace: acm-policies
 data:
-    path: governance/policies/CM-Configuration-Management
+    path: governance/policies/
+    #path: governance/policies/CM-Configuration-Management
     branch: master
 ---
 apiVersion: apps.open-cluster-management.io/v1

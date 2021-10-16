@@ -34,7 +34,7 @@ spec:
                       memory: 512Mi
                     defaultRequest:
                       memory: 256Mi
-                    type: Container
+                    type: Containerpolicy-comp-oper-setting
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
@@ -59,4 +59,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - {key: environment, operator: In, values: ["prod"]}
+      - {key: environment, operator: In, values: ["dev"]}
