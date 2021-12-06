@@ -1,0 +1,14 @@
+---
+- name: Telegram messaging
+  hosts: localhost
+
+  collections:
+    - community.general
+  tasks:
+    - name: telegram_msg
+      community.general.telegram:
+        token:  '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
+        api_args:
+          chat_id: -520706713
+          parse_mode: "markdown"
+          text: "BLLOOOP"
