@@ -6,9 +6,7 @@
     - community.general
   tasks:
     - name: telegram_msg
-      telegram:
-        token:  '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
-        api_args:
-          chat_id: -520706713
-          parse_mode: "markdown"
-          text: "BLLOOOP"
+      community.general.telegram:
+        token:  1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc
+        chat_id: -520706713
+        msg: 'whateves'
