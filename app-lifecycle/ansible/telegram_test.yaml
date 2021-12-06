@@ -6,7 +6,7 @@
     - community.general
   tasks:
     - name: telegram_msg
-      telegram:
+      community.general.telegram:
         token:  '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
         chat_id: -1001773833181
         msg: 'whateves'
