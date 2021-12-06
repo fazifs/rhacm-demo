@@ -8,5 +8,5 @@
     - name: telegram_msg
       telegram:
         token:  '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
-        chat_id: -100520706713
+        chat_id: -1001773833181
         msg: 'whateves'
