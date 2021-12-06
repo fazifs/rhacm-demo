@@ -7,7 +7,7 @@
     - community.general
   tasks:
     - name: telegram_msg
-      telegram:
+      community.general.telegram:
         token: "{{ tokenBot }}"
         chat_id: "{{ chatID }}"
         msg: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
