@@ -4,7 +4,7 @@ tokenBot: '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
 #tokenBot: 'bot1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
 
 # Chat IDs
-chatID:  -1001773833181	# Ansible-ACM Demo Channel
+chatID: -1001773833181	# Ansible-ACM Demo Channel
 # 
 # chat_id: -1001773833181 # "type": "supergroup".  -520706713
 
