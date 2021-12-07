@@ -9,6 +9,6 @@
       telegram:
         token:  '1957180056:AAGpI5tz9uUJEjbffss8TfOWuhuJMg8ZBNc'
         api_args:
-          chat_id: -520706713
+          chat_id: -1001773833181
           parse_mode: "markdown"
           text: "BLLOOOP"
