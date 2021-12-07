@@ -6,10 +6,12 @@
   collections: 
     - community.general
   tasks:
-    - name: telegram_msg
-      community.general.telegram:
-        token: "{{ tokenBot }}"
-        chat_id: "{{ chatID }}"
-        msg: 'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
-      with_items: "{{ target_clusters }}"
+      - name: telegram_msg
+        telegram:
+          token:  "{{ tokenBot }}"
+          api_args:
+             chat_id: "{{ chatID }}"
+             parse_mode: "markdown"
+             text:  'The application "{{ APPLICATION }}" has been deployed to cluster "{{ item }}"'
+        with_items: "{{ target_clusters }}"
  
