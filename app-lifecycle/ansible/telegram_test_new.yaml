@@ -1,6 +1,6 @@
 ---
 - name: Telegram messaging
-  hosts: localhost
+  hosts: all
 
   collections:
     - community.general
